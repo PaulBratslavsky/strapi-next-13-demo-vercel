@@ -91,7 +91,7 @@ export default function PostList({
                   />
                 )}
 
-                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
+                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline text-violet-400">
                   {article.attributes.title}
                 </h3>
 
