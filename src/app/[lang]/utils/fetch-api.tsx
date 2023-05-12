@@ -5,6 +5,7 @@ import { getStrapiURL } from "./api-helpers";
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
   // Merge default and user options
   const mergedOptions = {
+    next: { revalidate: 60 },
     headers: {
       "Content-Type": "application/json",
     },
