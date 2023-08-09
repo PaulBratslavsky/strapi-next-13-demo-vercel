@@ -4,7 +4,12 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['rigid-spicy-smash.media.strapiapp.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'rigid-spicy-smash.media.strapiapp.com',
+      }
+    ],
   },
 }
 
